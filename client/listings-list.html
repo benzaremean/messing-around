@@ -1,0 +1,18 @@
+<template name='listingsList'>
+	<h3>Listings</h3>
+	<ul>
+		{{#each alllistings}}
+		<li>
+			<a href="listings/{{_id}}">{{> listing}}</a>
+		</li>
+		{{/each}}
+	</ul>
+</template>
+
+<template name='listing'>	
+	<span>{{businessname}}</span>
+	<span>{{firstname}}</span>
+	<span>{{lastname}}</span>
+	<span>{{postcode}}</span>
+	<span>{{email}}</span>	
+</template>
