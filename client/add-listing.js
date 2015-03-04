@@ -13,3 +13,19 @@ Template.listingsForm.events({
 	}
 });
 
+
+Template.listing.events({	
+	"click .edit": function (evt, template) {
+		evt.preventDefault()
+		console.log('yay');
+    	// Set the checked property to the opposite of its current value
+    	// Tasks.update(this._id, {$set: {checked: ! this.checked}});
+  	},
+  	"click .delete": function (evt, template) {
+  		evt.preventDefault()
+  		Meteor.call("deleteListing", function(err, id) {
+  			console.log(id);
+  		});
+  	}
+});
+

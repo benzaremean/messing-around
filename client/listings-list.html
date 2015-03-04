@@ -14,5 +14,15 @@
 	<span>{{firstname}}</span>
 	<span>{{lastname}}</span>
 	<span>{{postcode}}</span>
-	<span>{{email}}</span>	
+	<span>{{email}}</span>
+	<button class='edit'>Edit</button>
+	<button class='delete'>Delete</button>
+</template>
+
+<template name='listingEdit'>
+	<input type='text' id='businessname' value='{{businessname}}'>
+	<input type='text' id='firstname' value='{{firstname}}'>
+	<input type='text' id='lastname' value='{{lastname}}'>
+	<input type='text' id='postcode' value='{{postcode}}'>
+	<input type='text' id='email' value='{{email}}'>
 </template>

@@ -19,5 +19,9 @@ Meteor.methods({
 			lastname: lastname, 
 			email: email
 		});
+	},
+	deleteListing: function(_id) {
+		console.log('hsgkfjghsjkgfjhgsjkfgj')
+		// Listings.remove(_id);	
 	}
 });
